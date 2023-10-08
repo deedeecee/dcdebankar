@@ -14,40 +14,28 @@
             width: 0.4em;
             /* Adjust the width as needed */
         }
-    
+
         /* Handle on hover */
         body::-webkit-scrollbar-thumb:hover {
             background-color: rgba(0, 0, 0, 0.5);
             /* Change the color on hover */
         }
-    
+
         /* Track */
         body::-webkit-scrollbar-track {
             background: transparent;
             /* Make the track transparent */
         }
-    
+
         /* Custom CSS for Netflix-inspired design */
         body {
             background-color: #141414;
             /* Netflix black background */
             color: #ffffff;
         }
-    
+
         /* Header and Navigation */
-        .netflix-header-nav {
-            background-color: #000;
-            padding: 1rem;
-            display: flex;
-            justify-content: space-between;
-            /* Align items horizontally */
-            align-items: center;
-            /* Center items vertically */
-        }
-    
-        /* Header */
         .netflix-header {
-            /* No changes needed in the CSS for the header */
             background-color: #000;
             padding: 1rem;
             /* Add a higher z-index to keep the header on top */
@@ -55,10 +43,10 @@
             position: relative;
             /* Add relative positioning for z-index to work */
         }
-    
+
+
         /* Navigation */
         .netflix-nav {
-            /* No changes needed in the CSS for the navigation */
             background-color: rgba(0, 0, 0, 0.9);
             padding: 1rem 0;
             position: fixed;
@@ -68,7 +56,7 @@
             z-index: 999;
             position: relative;
         }
-    
+
         .netflix-nav a {
             color: #ffffff;
             font-size: 1.2rem;
@@ -82,7 +70,7 @@
             position: relative;
             /* Position for the underline */
         }
-    
+
         .netflix-nav a::before {
             content: "";
             /* Create an empty element for the underline */
@@ -100,52 +88,54 @@
             transition: background-color 0.3s ease-in-out;
             /* Add smooth background color transition */
         }
-    
+
         .netflix-nav a:hover::before {
             background-color: #e50914;
             /* Red underline on hover */
         }
-    
+
+
+
         /* Sections */
         .netflix-section {
             background-color: #141414;
             padding: 2rem;
         }
-    
+
         /* Skills Section */
         .netflix-skills {
             background-color: #1c1c1c;
             /* Dark gray */
         }
-    
+
         /* Footer */
         .netflix-footer {
             background-color: #000;
             padding: 1rem;
         }
-    
+
         /* Projects Section */
         .netflix-project-card {
             background-color: #000;
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
-    
+
         .netflix-project-card:hover {
             transform: scale(1.05);
             box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
         }
-    
+
         /* Skills Section */
         .netflix-skill-card {
             background-color: #1c1c1c;
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
-    
+
         .netflix-skill-card:hover {
             transform: scale(1.05);
             box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
         }
-    
+
         /* CSS for Tooltip */
         #email-tooltip {
             position: absolute;
@@ -154,155 +144,40 @@
             left: 100%;
             transform: translateX(-50%);
         }
-
-        /* Mobile Navigation Styles */
-        .mobile-nav {
-            display: none;
-            background-color: rgba(0, 0, 0, 0.9);
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1001;
-        }
-
-        .menu-toggle {
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 10px;
-            margin: 10px;
-            position: absolute;
-            top: 0;
-            right: 0;
-            z-index: 1002;
-        }
-
-        .bar {
-            width: 25px;
-            height: 3px;
-            background-color: #ffffff;
-            display: block;
-            margin: 6px auto;
-            transition: 0.4s;
-        }
-
-        .menu {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
-            transition: left 0.3s ease-in-out;
-        }
-
-        .menu.active {
-            left: 0;
-        }
-
-    
-        /* Responsive design for tablets */
-        @media (max-width: 1024px) {
-            .netflix-nav ul {
-                flex-direction: column;
-            }
-    
-            .netflix-nav a {
-                margin: 0.5rem 0;
-            }
-        }
-    
-        /* Responsive design for mobile devices */
-        @media (max-width: 640px) {
-            .netflix-header {
-                padding: 0.5rem;
-            }
-    
-            .netflix-nav {
-                padding: 0.5rem 0;
-            }
-    
-            /* Add more mobile-specific styles as needed */
-        }
     </style>
-
 </head>
 
 <body>
-    <!-- Header and Navigation -->
-    <div class="netflix-header-nav flex justify-between items-center">
-        <!-- Header -->
-        <header class="netflix-header">
-            <div class="container mx-auto text-center">
-                <h1 class="text-4xl font-bold text-red-600">Debankar Dutta Chowdhury</h1>
-                <p class="text-lg">Computer Science Engineer</p>
-            </div>
-        </header>
-    
-        <!-- Navigation -->
-        <nav class="netflix-nav">
-            <div class="container mx-auto">
-                <ul class="flex space-x-4">
-                    <li class="hover:text-red-600"><a href="#about">About Me</a></li>
-                    <li class="hover:text-red-600"><a href="#projects">Projects</a></li>
-                    <li class="hover:text-red-600"><a href="#experience">Experience</a></li>
-                    <li class="hover:text-red-600"><a href="#skills">Skills</a></li>
-                    <li class="hover:text-red-600"><a href="#contact">Contact Me</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
 
-    <!-- Mobile Navigation (Hamburger Menu) -->
-    <div class="mobile-nav">
-        <button class="menu-toggle" onclick="toggleMenu()">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-        <ul class="menu">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </ul>
-    </div>
+    <!-- Header -->
+    <header class="netflix-header">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold text-red-600">Debankar Dutta Chowdhury</h1>
+            <p class="text-lg">Computer Science Engineer</p>
+        </div>
+    </header>
 
+    <!-- Navigation -->
+    <nav class="netflix-nav">
+        <div class="container mx-auto flex justify-end">
+            <ul class="flex space-x-4">
+                <li class="hover:text-red-600"><a href="#about">About Me</a></li>
+                <li class="hover:text-red-600"><a href="#projects">Projects</a></li>
+                <li class="hover:text-red-600"><a href="#experience">Experience</a></li>
+                <li class="hover:text-red-600"><a href="#skills">Skills</a></li>
+                <li class="hover:text-red-600"><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- About Me -->
     <section id="about" class="netflix-section">
         <div class="container mx-auto">
-            <div
-                class="bg-gradient-to-br from-red-800 to-black p-4 md:p-8 rounded-lg transition duration-300 transform hover:scale-105 hover:shadow-lg">
-                <h2 class="text-2xl font-semibold text-white">About Me</h2>
-                <p class="mt-4 text-white">👋 Hello! I'm Debankar Dutta Chowdhury, a passionate Computer Science and
-                    Engineering student at Tezpur University.</p>
-    
-                <p class="mt-4 text-white">💻 The fascination for coding led me to dive into the realms of software
-                    development, where I've honed my skills in languages like Java, Python, and C++. Crafting elegant and
-                    efficient code is my forte, and I'm always up for a coding challenge.</p>
-    
-                <p class="mt-4 text-white">🌌 One of my passions lies in the fascinating domain of Quantum Computing.
-                    Exploring the quantum world, I've delved into Quantum Machine Learning and its applications. I find the
-                    intersection of quantum mechanics and computer science to be a captivating playground for innovation.
-                </p>
-    
-                <p class="mt-4 text-white">🚀 Join me on this exciting journey as I continue to explore, learn, and create
-                    in the world of technology. Feel free to reach out, whether it's for collaboration, a tech discussion,
-                    or just to say hello!</p>
-            </div>
+            <h2 class="text-2xl font-semibold text-red-600">About Me</h2>
+            <p class="mt-4">I am a Computer Science and Engineering student at Tezpur University with a passion for
+                coding and quantum computing.</p>
         </div>
     </section>
-
 
     <!-- Projects -->
     <section id="projects" class="netflix-section">
@@ -316,11 +191,11 @@
                     <ul class="text-gray-200 list-disc pl-6">
                         <li>Developed a responsive ToDo-List application using JavaFX and inline CSS.</li>
                         <li>Intuitive user interface for task management.</li>
-                        <li>GitHub Repository: <a href="https://github.com/deedeecee/JavaFX-ToDo-App" target="_blank"
+                        <li>GitHub Repository: <a href="https://github.com/deedeecee/JavaFX-ToDo-App"
                                 class="text-red-600 hover:underline group-hover:text-red-600">JavaFX-ToDo-App</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- Project 2 -->
                 <div
                     class="netflix-project-card group relative rounded-full bg-black p-8 hover:bg-gray-900 transition duration-300">
@@ -332,7 +207,7 @@
                         <li>Streamlined the process of enrolling and dropping courses.</li>
                     </ul>
                 </div>
-    
+
                 <!-- Add more projects similarly -->
             </div>
         </div>
@@ -344,16 +219,16 @@
         <div class="container mx-auto">
             <h2 class="text-2xl font-semibold text-red-600 mb-8 animate__animated animate__fadeIn">Experience</h2>
 
+            <!-- Experience 1 -->
             <div class="mb-10 experience-item animate__animated animate__fadeInLeft">
                 <div class="experience-container">
                     <div class="flex items-center mb-2">
-                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4">
-                            <!-- Replace this red circle with the logo image -->
-                            <img src="National_Institute_Of_Technology_Silchar_Logo.svg.png" alt="College Logo"
-                                class="w-10 h-10 rounded-full">
+                        <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-briefcase text-white"></i>
                         </div>
                         <div>
-                            <h3 class="text-lg font-semibold">Research Intern at National Institute of Technology, Silchar</h3>
+                            <h3 class="text-lg font-semibold">Research Intern at National Institute of Technology,
+                                Silchar</h3>
                             <p class="text-gray-500">Summer 2023</p>
                         </div>
                     </div>
@@ -378,67 +253,67 @@
                     class="relative group bg-gray-800 p-4 rounded-lg hover:bg-red-600 transition duration-300 ease-in-out transform hover:scale-105">
                     <p class="text-lg font-semibold text-white">Java</p>
                 </div>
-    
+
                 <!-- Skill 2 -->
                 <div
                     class="relative group bg-gray-800 p-4 rounded-lg hover:bg-red-600 transition duration-300 ease-in-out transform hover:scale-105">
                     <p class="text-lg font-semibold text-white">Python</p>
                 </div>
-    
+
                 <!-- Skill 3 -->
                 <div
                     class="relative group bg-gray-800 p-4 rounded-lg hover:bg-red-600 transition duration-300 ease-in-out transform hover:scale-105">
                     <p class="text-lg font-semibold text-white">C++</p>
                 </div>
-    
+
                 <!-- Skill 4 -->
                 <div
                     class="relative group bg-gray-800 p-4 rounded-lg hover:bg-red-600 transition duration-300 ease-in-out transform hover:scale-105">
                     <p class="text-lg font-semibold text-white">JavaFX</p>
                 </div>
-    
+
                 <!-- Skill 5 -->
                 <div
                     class="relative group bg-gray-800 p-4 rounded-lg hover:bg-red-600 transition duration-300 ease-in-out transform hover:scale-105">
                     <p class="text-lg font-semibold text-white">Git</p>
                 </div>
-    
+
                 <!-- Skill 6 -->
                 <div
                     class="relative group bg-gray-800 p-4 rounded-lg hover:bg-red-600 transition duration-300 ease-in-out transform hover:scale-105">
                     <p class="text-lg font-semibold text-white">Quantum Computing</p>
                 </div>
-    
+
                 <!-- Skill 7 -->
                 <div
                     class="relative group bg-gray-800 p-4 rounded-lg hover:bg-red-600 transition duration-300 ease-in-out transform hover:scale-105">
                     <p class="text-lg font-semibold text-white">Java Swing</p>
                 </div>
-    
+
                 <!-- Skill 8 -->
                 <div
                     class="relative group bg-gray-800 p-4 rounded-lg hover:bg-red-600 transition duration-300 ease-in-out transform hover:scale-105">
                     <p class="text-lg font-semibold text-white">MySQL</p>
                 </div>
-    
+
                 <!-- Skill 9 -->
                 <div
                     class="relative group bg-gray-800 p-4 rounded-lg hover:bg-red-600 transition duration-300 ease-in-out transform hover:scale-105">
                     <p class="text-lg font-semibold text-white">Linux</p>
                 </div>
-    
+
                 <!-- Skill 10 -->
                 <div
                     class="relative group bg-gray-800 p-4 rounded-lg hover:bg-red-600 transition duration-300 ease-in-out transform hover:scale-105">
                     <p class="text-lg font-semibold text-white">Qiskit</p>
                 </div>
-    
+
                 <!-- Skill 11 -->
                 <div
                     class="relative group bg-gray-800 p-4 rounded-lg hover:bg-red-600 transition duration-300 ease-in-out transform hover:scale-105">
                     <p class="text-lg font-semibold text-white">Docker</p>
                 </div>
-    
+
                 <!-- Skill 12 -->
                 <div
                     class="relative group bg-gray-800 p-4 rounded-lg hover:bg-red-600 transition duration-300 ease-in-out transform hover:scale-105">
@@ -453,79 +328,63 @@
         <div class="container mx-auto">
             <h2 class="text-2xl font-semibold text-red-600 mb-4 animate__animated animate__fadeIn">Contact Me</h2>
             <p class="mb-4">Feel free to reach out to me through the following channels:</p>
-    
+
             <!-- Contact Details -->
-            <div class="mb-6 grid grid-cols-3 gap-4">
-                <div class="contact-box p-4 bg-gray-800 rounded-lg flex items-center">
-                    <i class="fas fa-envelope text-red-600 text-2xl mr-2"></i>
-                    <div>
-                        <span class="text-white-600 text-lg">Email:</span>
-                        <a href="#" class="text-red-400 hover:underline ml-2" title="Click to copy"
-                            onclick="copyEmailToClipboard('dcdebankar@gmail.com')">dcdebankar@gmail.com</a>
+            <ul class="mb-6">
+                <li class="mb-2 flex items-center">
+                    <i class="fas fa-envelope text-red-600 mr-2"></i>
+                    <span class="text-white-600">Email:</span>
+                    <a href="#" class="text-red-400 hover:underline ml-1" title="click to copy"
+                        onclick="copyEmailToClipboard('dcdebankar@gmail.com')">dcdebankar@gmail.com</a>
+                    <div id="email-tooltip" class="hidden bg-green-500 text-white px-2 py-1 rounded-md ml-2">
+                        Copied!
                     </div>
-                    <div id="email-tooltip" class="hidden bg-green-500 text-white px-2 py-1 rounded-md ml-2">Copied!</div>
-                </div>
-                <div class="contact-box p-4 bg-gray-800 rounded-lg flex items-center">
-                    <i class="fab fa-github text-red-600 text-2xl mr-2"></i>
-                    <div>
-                        <span class="text-white-600 text-lg">GitHub:</span>
-                        <a href="https://github.com/deedeecee" target="_blank"
-                            class="text-red-400 hover:underline ml-2">deedeecee</a>
-                    </div>
-                </div>
-                <div class="contact-box p-4 bg-gray-800 rounded-lg flex items-center">
-                    <i class="fab fa-linkedin-in text-red-600 text-2xl mr-2"></i>
-                    <div>
-                        <span class="text-white-600 text-lg">LinkedIn:</span>
-                        <a href="https://www.linkedin.com/in/debankar-dutta-chowdhury-b61b29201/" target="_blank"
-                            class="text-red-400 hover:underline ml-2">debankar-dutta-chowdhury</a>
-                    </div>
-                </div>
-                <div class="contact-box p-4 bg-gray-800 rounded-lg flex items-center">
-                    <i class="fab fa-twitter text-red-600 text-2xl mr-2"></i>
-                    <div>
-                        <span class="text-white-600 text-lg">Twitter:</span>
-                        <a href="https://twitter.com/thisisdebankar" target="_blank"
-                            class="text-red-400 hover:underline ml-2">thisisdebankar</a>
-                    </div>
-                </div>
-                <div class="contact-box p-4 bg-gray-800 rounded-lg flex items-center">
-                    <i class="fab fa-instagram text-red-600 text-2xl mr-2"></i>
-                    <div>
-                        <span class="text-white-600 text-lg">LeetCode:</span>
-                        <a href="https://leetcode.com/debankar/" target="_blank"
-                            class="text-red-400 hover:underline ml-2">Debankar Dutta Chowdhury</a>
-                    </div>
-                </div>
-                <div class="contact-box p-4 bg-gray-800 rounded-lg flex items-center">
-                    <i class="fab fa-instagram text-red-600 text-2xl mr-2"></i>
-                    <div>
-                        <span class="text-white-600 text-lg">Instagram:</span>
-                        <a href="https://www.instagram.com/dcdebankar/" target="_blank"
-                            class="text-red-400 hover:underline ml-2">dcdebankar</a>
-                    </div>
-                </div>
-            </div>
+                </li>
+                <li class="mb-2 flex items-center">
+                    <i class="fab fa-linkedin-in text-red-600 mr-2"></i>
+                    <span class="text-white-600">LinkedIn:</span>
+                    <a href="https://www.linkedin.com/in/debankar-dutta-chowdhury-b61b29201/" target="_blank"
+                        class="text-red-400 hover:underline ml-1">debankar-dutta-chowdhury</a>
+                </li>
+                <li class="mb-2 flex items-center">
+                    <i class="fab fa-github text-red-600 mr-2"></i>
+                    <span class="text-white-600">GitHub:</span>
+                    <a href="https://github.com/deedeecee" target="_blank"
+                        class="text-red-400 hover:underline ml-1">deedeecee</a>
+                </li>
+                <li class="mb-2 flex items-center">
+                    <i class="fab fa-instagram text-red-600 mr-2"></i>
+                    <span class="text-white-600">Instagram:</span>
+                    <a href="https://www.instagram.com/dcdebankar/" target="_blank"
+                        class="text-red-400 hover:underline ml-1">dcdebankar</a>
+                </li>
+                <li class="flex items-center">
+                    <i class="fab fa-twitter text-red-600 mr-2"></i>
+                    <span class="text-white-600">Twitter:</span>
+                    <a href="https://twitter.com/thisisdebankar" target="_blank"
+                        class="text-red-400 hover:underline ml-1">thisisdebankar</a>
+                </li>
+            </ul>
 
             <script>
                 // JavaScript function to copy email address to clipboard and show tooltip
-                    function copyEmailToClipboard(email) {
-                        var tempInput = document.createElement("input");
-                        tempInput.value = email;
-                        document.body.appendChild(tempInput);
-                        tempInput.select();
-                        document.execCommand("copy");
-                        document.body.removeChild(tempInput);
+                function copyEmailToClipboard(email) {
+                    var tempInput = document.createElement("input");
+                    tempInput.value = email;
+                    document.body.appendChild(tempInput);
+                    tempInput.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(tempInput);
 
-                        // Show the tooltip for a few seconds
-                        var tooltip = document.getElementById("email-tooltip");
-                        tooltip.classList.remove("hidden");
-                        setTimeout(function () {
-                            tooltip.classList.add("hidden");
-                        }, 2000); // Hide the tooltip after 2 seconds
-                    }
+                    // Show the tooltip for a few seconds
+                    var tooltip = document.getElementById("email-tooltip");
+                    tooltip.classList.remove("hidden");
+                    setTimeout(function () {
+                        tooltip.classList.add("hidden");
+                    }, 2000); // Hide the tooltip after 2 seconds
+                }
             </script>
-    
+
             <p>If you have any questions or just want to say hello, don't hesitate to get in touch!</p>
         </div>
     </section>
