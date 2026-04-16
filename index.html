@@ -398,6 +398,7 @@
       position: absolute; inset: 0;
       background: linear-gradient(135deg, var(--accent-dim), transparent 60%);
       opacity: 0; transition: opacity 0.3s;
+      z-index: -1
     }
     .project-card:hover { border-color: rgba(232,184,75,0.4); transform: translateY(-4px); }
     .project-card:hover::before { opacity: 1; }
@@ -660,6 +661,7 @@
       <div class="hero-actions">
         <a href="#projects" class="btn-primary">View My Work</a>
         <a href="https://github.com/deedeecee" target="_blank" rel="noopener" class="btn-ghost">GitHub ↗</a>
+        <a href="resume.pdf" download class="btn-ghost">Download Resume</a>
       </div>
       <div class="hero-stats">
         <div>
